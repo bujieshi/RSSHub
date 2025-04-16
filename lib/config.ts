@@ -14,8 +14,8 @@ export type Config = {
     chromiumExecutablePath?: string;
     // network
     connect: {
-        // port: number;
-        port: process.env.PORT ? parseInt(process.env.PORT) : 1200,
+        port: number;
+        // port: process.env.PORT ? parseInt(process.env.PORT) : 1200,
     };
     listenInaddrAny: boolean;
     requestRetry: number;
